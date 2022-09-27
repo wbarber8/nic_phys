@@ -54,7 +54,3 @@ def check_bits(port_1, port_2, port_3, port_4):
                     return True
     else:
         return False
-
-bit = input("Enter a 4 bit value: ")
-nic_send(bit)
-print(nic_recv())
