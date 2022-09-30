@@ -4,11 +4,9 @@ import time
 
 pi = pigpio.pi()
 
-# target ports
-input_port = 27
-output_port = 26
-pi.set_mode(input_port, pigpio.OUTPUT)
-pi.set_mode(output_port, pigpio.INPUT)
+# port 1 sender
+port = 27
+pi.set_mode(port, pigpio.OUTPUT)
 
 # time between messages sent
 indicator_time_delay = 0.001
@@ -16,7 +14,7 @@ value_time_delay = 0.003
 
 def send():
     # clears receiver
-    pi.write(input_port, 0)
+    pi.write(port, 0)
     #print("Clear")
     sending_indicator = 1
     
@@ -31,10 +29,10 @@ def send():
         #print("MSG sent!")
 
 def send_value(value, indicator):
-    pi.write(input_port, indicator)
+    pi.write(port, indicator)
     #print("Indicator: " + str(indicator))
     time.sleep(indicator_time_delay)
-    pi.write(input_port, int(value))
+    pi.write(port, int(value))
     #print("Value: " + value)
     time.sleep(value_time_delay)
 
