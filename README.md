@@ -3,6 +3,8 @@
 Authors: Will Barber and Luca Espinosa
 Languages Used: Python
 
+This repository contains our three main projects for this class. In the Blinky folder, we have code that enables the NIC lights to blink on and off. The Chat folder contains our Pairwise Communication chat between two Pis. Finally, our Network folder contains our Multi User Chat Room that can be run on more than two Pis at the same time.
+
 Files:
 README.md - this readme file
 released_to.txt - anyone this code is released to
