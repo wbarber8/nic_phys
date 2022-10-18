@@ -1,4 +1,4 @@
-# comp_network
+# Raspberry Pi Computer Network
 
 Authors: Will Barber and Luca Espinosa
 Languages Used: Python
