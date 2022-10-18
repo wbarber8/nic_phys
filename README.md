@@ -12,3 +12,6 @@ src/blinky/light.py - main file that runs the functions in api.py
 src/chat/send.py - contains the logic for sending a message as bits across the link layer
 src/chat/receive.py - contains the logic for receiving the message and displaying it to the user
 src/chat/run_chat.py - main file that uses threads to run send and receive at the same time
+src/network/lib.py - contains different Processes for each port to send and receive from
+src/network/receive.py - receives messages and adds them to the Queue
+src/network/run_chat.py - contains a Receive Process and a Send Process to run simultaneously
