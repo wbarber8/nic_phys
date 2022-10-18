@@ -1,4 +1,4 @@
-# nic_phys
+# comp_network
 
 Authors: Will Barber and Luca Espinosa
 Languages Used: Python
